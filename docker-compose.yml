@@ -1,0 +1,9 @@
+
+version: "3.8"
+services:
+  app:
+    image: python:3.9-slim       # Use Python 3.9 as the base
+    working_dir: /app            # Set the working directory inside the container
+    volumes:
+      - .:/app                   # Mount your current directory to /app in the container
+    command: tail -f /dev/null   # Keep the container running
