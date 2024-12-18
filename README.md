@@ -4,10 +4,33 @@ Profiles REST API course code,
 
 Steps to run python files on docker:
 <!-- Run container -->
-1. Run: docker-compose up -d
+1. docker-compose up -d
 <!-- Lists all running containers so you can se the names -->
-2. Run: docker ps
+2. docker ps
 <!-- same as ssh of vagrant. Ex. docker exec -it profiles-rest-api-app-1 bash -->
-3. Run: docker exec -it < container name > bash
+3. docker exec -it < container name > bash
 <!-- Stop Container -->
-4. Run: docker-compose down
+4. docker-compose down
+
+Steps for Python virtual env:
+<!-- Create python virtual env -->
+1. python -m venv ~/env
+<!-- Activate virtual env. (env) prefix should appear -->
+2. source ~/env/bin/activate
+<!-- Deactivate virtual env -->
+3. deactivate
+<!-- Install venv requirements -->
+4. pip install -r requirements.txt
+
+Django:
+<!-- Create project -->
+1. django-admin.py startproject profiles_project .
+<!-- Create app -->
+2. python manage.py startapp profiles_api
+<!-- 
+You install apps in your django project by
+adding them to the list variable in the settings.py file
+INSTALLED_APPS
+ -->
+<!-- Start server inside (env) -->
+3. python manage.py runserver 0.0.0.0:8000

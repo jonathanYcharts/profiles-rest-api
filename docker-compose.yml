@@ -6,4 +6,6 @@ services:
     working_dir: /app            # Set the working directory inside the container
     volumes:
       - .:/app                   # Mount your current directory to /app in the container
+    ports:
+      - "8000:8000" 
     command: tail -f /dev/null   # Keep the container running
