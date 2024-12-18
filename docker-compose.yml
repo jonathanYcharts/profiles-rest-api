@@ -7,5 +7,5 @@ services:
     volumes:
       - .:/app                   # Mount your current directory to /app in the container
     ports:
-      - "8000:8000" 
+      - "8000:8000"              # Expose correct ports for http://127.0.0.1:8000/
     command: tail -f /dev/null   # Keep the container running
