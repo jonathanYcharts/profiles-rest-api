@@ -35,3 +35,7 @@ INSTALLED_APPS
 <!-- Start server inside (env) -->
 3. python manage.py runserver 0.0.0.0:8000
 4. Navigate to http://127.0.0.1:8000/
+
+Super User:
+jonathan@ycharts.com
+Password123
