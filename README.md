@@ -43,3 +43,7 @@ Password123
 Super User:
 naydelin@ycharts.com
 Password123
+
+Conect to the server:
+1. ssh ubuntu@ec2-18-117-94-6.us-east-2.compute.amazonaws.com
+2. Navigate to the project: cd /usr/local/apps/profiles-rest-api/
