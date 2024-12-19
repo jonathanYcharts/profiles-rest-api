@@ -39,3 +39,7 @@ INSTALLED_APPS
 Super User:
 jonathan@ycharts.com
 Password123
+
+Super User:
+naydelin@ycharts.com
+Password123
