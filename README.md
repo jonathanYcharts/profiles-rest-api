@@ -7,8 +7,8 @@ Steps to run python files on docker:
 1. docker-compose up -d
 <!-- Lists all running containers so you can se the names -->
 2. docker ps
-<!-- same as ssh of vagrant. Ex. docker exec -it profiles-rest-api-app-1 bash -->
-3. docker exec -it < container name > bash
+<!-- same as ssh of vagrant -->
+3. docker exec -it profiles-rest-api-app-1 bash
 <!-- Stop Container -->
 4. docker-compose down
 
